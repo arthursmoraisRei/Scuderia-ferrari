@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferrari</title>
+
+    <!-- Ícone da aba -->
+    <link rel="icon" type="image/png" href="logoferrari.png" />
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Cabeçalho com logo e título */
+      .texto {
+        background-color: red;
+        color: black;
+        padding: 20px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .texto img {
+        height: 80px;
+        width: auto;
+      }
+
+      .texto h1 {
+        font-size: 40px;
+        margin: 10px 0;
+      }
+
+      .texto p {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      /* Cards dos carros */
+      .carros {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 30px;
+      }
+
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        width: 380px;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        background-color: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        border-radius: 10px;
+        width: 100%;
+      }
+
+      .tag-oferta {
+        position: absolute;
+        background-color: red;
+        color: white;
+        padding: 6px 10px;
+        border-radius: 5px;
+        font-size: 18px;
+        top: 10px;
+        left: 10px;
+      }
+
+      .card h2 {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+
+      .card p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 32px;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 30px;
+        margin: 40px auto 60px auto; /* margem inferior maior */
+        width: 60%; /* ocupa 60% da tela */
+        max-width: 900px;
+      }
+
+      .esquerda,
+      .direita {
+        flex: 1;
+        background-color: #d91e18;
+        color: white;
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s, background-color 0.3s;
+      }
+
+      .esquerda:hover,
+      .direita:hover {
+        transform: scale(1.05);
+        background-color: #b71c1c;
+      }
+
+      .esquerda img,
+      .direita img {
+        max-width: 80%;
+        border-radius: 10px;
+        margin: 10px 0;
+      }
+
+      .esquerda h1,
+      .direita h1 {
+        font-size: 26px;
+        margin-bottom: 10px;
+      }
+
+      .esquerda h2,
+      .direita h2 {
+        font-size: 22px;
+        margin: 5px 0;
+      }
+
+      h1 {
+        cursor: url('https://www.rw-designer.com/cursor-view/31911.png') 10 10, auto;
+        background-color: red;
+        margin: 10px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="texto">
+      <!-- Logo Ferrari -->
+      <img src="logoferrari1.png" alt="Logo Ferrari" />
+      <div>
+        <h1>FERRARI</h1>
+        <p>Cavallino Rampante</p>
+      </div>
+    </div>
+
+    <div class="carros">
+      <div class="card">
+        <div class="tag-oferta">Ferrari 250 GTO (1962)</div>
+        <img
+          src="https://cdn.motor1.com/images/mgl/wlpjpQ/s1/1962-ferrari-250-gto-auction.jpg"
+        />
+        <h2>A Era Clássica e o Começo da Lenda</h2>
+        <p>
+          Considerado por muitos o carro mais bonito e valioso do mundo, o 250
+          GTO simboliza o auge da Ferrari nos anos 60.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="tag-oferta">Ferrari F40 (1987)</div>
+        <img
+          src="https://sothebys-com.brightspotcdn.com/dims4/default/19b378f/2147483647/strip/true/crop/1920x1080+0+0/resize/1154x649!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fdotcom%2F9b%2F98%2Fe57d15814cf9abee1cb5debbbc5c%2Fferrari-f50.jpg"
+        />
+        <h2>O Meio da História e o Sonho dos Anos 80</h2>
+        <p>
+          Lançada para comemorar os 40 anos da Ferrari, a F40 foi o último carro
+          supervisionado por Enzo Ferrari antes de sua morte.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="tag-oferta">Ferrari SF90 Stradale (2020)</div>
+        <img
+          src="https://cdn.motor1.com/images/mgl/Kp3Eb/s1/ferrari-sf90-stradale-la-prova.jpg"
+        />
+        <h2>A Era Moderna e a Revolução Híbrida</h2>
+        <p>
+          A SF90 Stradale representa a fusão entre tradição e tecnologia. É o
+          primeiro carro híbrido plug-in da Ferrari, com tração integral e
+          aceleração de 0 a 100 km/h em apenas 2,5 segundos.
+        </p>
+      </div>
+    </div>
+
+    <h1>Modelos Mais Vendidos</h1>
+
+    <div class="container">
+      <div class="esquerda">
+        <h1>Ferrari 360</h1>
+        <img src="ferrari360.png" alt="Ferrari 360" />
+        <h2>17.653 unidades</h2>
+      </div>
+
+      <div class="direita">
+        <h1>Ferrari Mondial</h1>
+        <img src="ferrarimondial.png" alt="Ferrari Mondial" />
+        <h2>6.884 unidades</h2>
+      </div>
+    </div>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </body>
+</html>
